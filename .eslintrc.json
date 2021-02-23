@@ -1,0 +1,50 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "tsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "arrow-parens": [2, "always"],
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsc"] }],
+    "react/prop-types": ["off"],
+    "react/forbid-prop-types": ["off"],
+    "react/require-default-props": ["off"],
+    "react/sort-comp": ["off"],
+    "react/prefer-stateless-function": ["off", { "ignorePureComponents": true }],
+    "react/destructuring-assignment": ["off", "never"],
+    "react/no-access-state-in-setstate": ["off"],
+    "prefer-destructuring": ["off", { "object": true, "array": false }],
+    "class-methods-use-this": ["off"],
+    "no-use-before-define": ["off"],
+    "max-len": ["off"],
+    "no-shadow": ["off"],
+    "no-nested-ternary": ["off"],
+    "no-plusplus": ["off"],
+    "no-multi-assign": ["off"],
+    "object-curly-newline": ["off"],
+    "react/no-unused-state": ["off"],
+    "no-underscore-dangle": ["off"],
+    "no-param-reassign": ["off"],
+    "camelcase": "off",
+    "no-restricted-syntax": "off",
+    "no-var": "off",
+    "vars-on-top":"off"
+  }
+}
